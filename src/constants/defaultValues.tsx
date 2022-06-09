@@ -1,9 +1,7 @@
 /* 
 Google Youtube Api Key
 */
-export const API_KEY: string = 'AIzaSyAJKMWCqDoUZ9cvvPgxIH9JDniuM2KubN0';
-//export const API_KEY = 'AIzaSyCbcQMTPqAevOao2BQsQadm5SFTZljP2dM';
-//export const API_KEY = 'AIzaSyC31XvKwFm3J69ujnoPfumUBiKEEvH5gxA';
+export const API_KEY: string = '';
 
 /* 
 Base urls for api youtube
