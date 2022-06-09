@@ -13,7 +13,6 @@ Project is created with:
 * Axios: 0.27.2
 * Typescript: 4.7.3
 
-## Features
 ## Prerequisites
 
 1. Add your own personal youtube API Key in constants/defaultValues.js `const API_KEY = "ADD_API_KEY_HERE";`
