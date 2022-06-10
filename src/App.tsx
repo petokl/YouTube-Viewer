@@ -22,13 +22,13 @@ import { YoutubeSelected } from "./redux/youtube/types"
 import {RootStore} from "./redux/store";
 
 const App: React.FC = () => {
-  const { videos, selectedVideo, selectedComments, loading, loadingComments, error } = useSelector((state:RootStore) => ({
-    videos: state.youtube.videos, 
-    selectedVideo: state.youtube.selectedVideo, 
-    selectedComments: state.youtube.selectedComments, 
-    loading: state.youtube.loading, 
-    loadingComments: state.youtube.loadingComments, 
-    error: state.youtube.error
+  const { videos, selectedVideo, selectedComments, loading, loadingComments, error } = useSelector(({youtube}:RootStore) => ({
+    videos: youtube.videos, 
+    selectedVideo: youtube.selectedVideo, 
+    selectedComments: youtube.selectedComments, 
+    loading: youtube.loading, 
+    loadingComments: youtube.loadingComments, 
+    error: youtube.error
   }), shallowEqual);
 
   const dispatch = useDispatch();
