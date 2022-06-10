@@ -41,13 +41,16 @@ const App: React.FC = () => {
   }
 
   useEffect(() => {
-    videoSearch('acdc')
+    if(videos.length === 0){
+      videoSearch('acdc')
+    }
     window.addEventListener('scroll', loadMore);
     // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     if(error){
+      alert(error);
       dispatch(clearErrorYoutube());
     }
   }, [error, dispatch]);
